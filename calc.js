@@ -2,11 +2,15 @@ function calculation() {
     var f_No = document.getElementById("fNo");
     var s_No = document.getElementById("sNo");
     var result = document.getElementById("calc");
-    result.innerHTML = "<p>The sum of two num is " + (Number(f_No.value) + Number(s_No.value)) + "</p>"
-        + "<p>The subtraction of two num is " + (Number(f_No.value) - Number(s_No.value)) + "</p>"
-        + "<p>The multiplication of two num is " + (Number(f_No.value) * Number(s_No.value)) + "</p>"
-        + "<p>The divisin of two num is " + (Number(f_No.value) / Number(s_No.value)) + "</p>"
-        + "<p>The square of two num is " + (Math.pow(Number(f_No.value), 2)) + "&nbsp;and&nbsp;" + (Math.pow(Number(s_No.value), 2)) + "</p>";
+    result.innerHTML = "<p>The sum of two num is <b>" + (Number(f_No.value) + Number(s_No.value)) + "</b></p>"
+        + "<p>The subtraction of two num is <b>" + (Number(f_No.value) - Number(s_No.value)) + "</b></p>"
+        + "<p>The multiplication of two num is <b>" + (Number(f_No.value) * Number(s_No.value)) + "</b></p>"
+        + "<p>The divisin of two num is <b>" + (Number(f_No.value) / Number(s_No.value)) + "</b></p>"
+        + "<p>The square of two num is <b>" + (Math.pow(Number(f_No.value), 2)) + "&nbsp;and&nbsp;" + (Math.pow(Number(s_No.value), 2)) + "</b></p>"
+        + "<p>The square of two num is <b>" + (Math.pow(Number(f_No.value), 2)) + "&nbsp;and&nbsp;" + (Math.pow(Number(s_No.value), 2)) + "</b></p>"
+        + "<p>The log of two num is <b>" + (Math.log(Number(f_No.value))) + "&nbsp;and&nbsp;" + (Math.log(Number(s_No.value))) + "</b></p>"
+        + "<p>The sin of two num is <b>" + (Math.sin(Number(f_No.value))) + "&nbsp;and&nbsp;" + (Math.sin(Number(s_No.value))) + "</b></p>"
+        + "<p>The cos of two num is <b>" + (Math.cos(Number(f_No.value))) + "&nbsp;and&nbsp;" + (Math.cos(Number(s_No.value))) + "</b></p>";
 }
 
 var f_No1 = document.getElementById("fNo1");
@@ -30,11 +34,11 @@ function odd_even_calculation() {
             sum_of_odd += i;
         }
     }
-    document.getElementById('odd_even_calc').innerHTML = "<p>The sum of total numbers b/w the two inputfield is " + (sum_of_even + sum_of_odd) + "</p>"
-        + "<p>The total numbers b/w the two inputfield is " + (Number(obj.evenarr.length) + Number(obj.oddarr.length)) + "</p>"
-        + "<p>Even numbers b/w the two inputfield are " + obj.evenarr + "</p>"
-        + "<p>Odd numbers b/w the two inputfield are " + obj.oddarr + "</p>"
-        + "<p>The sum of even num is " + sum_of_even + "</p>" + "<p>The sum of odd num is " + sum_of_odd + "</p>";
+    document.getElementById('odd_even_calc').innerHTML = "<p>The sum of total numbers b/w the two inputfield is <b>" + (sum_of_even + sum_of_odd) + "</b> </p>"
+        + "<p>The total numbers b/w the two inputfield is <b>" + (Number(obj.evenarr.length) + Number(obj.oddarr.length)) + "</b> </p>"
+        + "<p>Even numbers b/w the two inputfield are <b>" + obj.evenarr + "</b> </p>"
+        + "<p>Odd numbers b/w the two inputfield are <b>" + obj.oddarr + "</b> </p>"
+        + "<p>The sum of even num is <b>" + sum_of_even + " </b></p>" + "<p>The sum of odd num is <b>" + sum_of_odd + "</b> </p>";
 }
 
 var textarea =  document.getElementById("text")
@@ -56,11 +60,11 @@ textarea.addEventListener('keyup',()=>{
         {
             if(document.getElementById('character_calc').innerHTML == "")
             {
-                document.getElementById('character_calc').innerHTML = "<p> The length in the text is " + totlen +"</p>"+"<p> The "+chararr[i]+ " length in the text is " + charlen +"</p>"
+                document.getElementById('character_calc').innerHTML = "<p> The length of the text is <b>" + totlen +"</b></p>"+"<p> The <b>"+chararr[i]+ "</b> length in the text is <b>" + charlen +"</b></p>"
             }
             else
             {
-                document.getElementById('character_calc').innerHTML+= "<p> The "+chararr[i]+ " length in the text is " + charlen +"</p>"
+                document.getElementById('character_calc').innerHTML+= "<p> The <b>"+chararr[i]+ "</b> length in the text is <b>" + charlen +"</b> </p>"
             }
         }
     }
